@@ -15,20 +15,22 @@ header{
     height: 30px;
 }
 main{
-    height: calc(100vh - 130px);
+    height: calc(100vh - 110px);
     overflow-y: auto;
     padding: 30px;
     color: white;
 }
 footer{
-    height: 100px;
-    background-color: red;
+    height: 80px;
+   /* padding: 0 5px; */
+    background-color: rgb(34,34,34);
 }
 /* UTILITY */
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*HEADER*/
 .navbar {
     display: flex;
@@ -70,3 +72,38 @@ footer{
     left: 5px;
 }
 
+/* FOOTER */
+.foot-navbar{
+    position: relative;
+}
+.foot-nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot-nav-top{
+    height: 80px;
+    width: 100%;
+}
+.foot-nav-left{
+    flex-basis: calc(100% / 3);
+}
+.foot-nav-center{
+    flex-basis: calc(100% / 3);
+    text-align: center;
+}
+.foot-nav-right{
+    flex-basis: calc(100% / 3);
+    text-align: right;
+}
+.fa-share-from-square{
+    color: rgb(75,200,0);
+}
+.foot-navbar i{
+    padding: 15px 13px;
+}
+.close{
+    padding: 30px 20px;
+    background-color: rgb(74,74,74);
+    color: red;
+}
