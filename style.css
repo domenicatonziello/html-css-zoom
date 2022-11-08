@@ -20,11 +20,7 @@ main{
     padding: 30px;
     color: white;
 }
-footer{
-    height: 80px;
-   /* padding: 0 5px; */
-    background-color: rgb(34,34,34);
-}
+
 /* UTILITY */
 .container{
     max-width: 1200px;
@@ -73,37 +69,46 @@ footer{
 }
 
 /* FOOTER */
-.foot-navbar{
-    position: relative;
+footer{
+    height: 80px;
+    background-color: rgb(34,34,34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.foot-nav-top{
+.end-meeting button{
+    border: 0;
+    color: red;
+    background-color: rgb(74,74,74);
+    padding: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+footer .end-meeting{
+    align-self: stretch;
+}
+.controls{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.foot-nav-top{
-    height: 80px;
-    width: 100%;
-}
-.foot-nav-left{
-    flex-basis: calc(100% / 3);
-}
-.foot-nav-center{
-    flex-basis: calc(100% / 3);
     text-align: center;
 }
-.foot-nav-right{
-    flex-basis: calc(100% / 3);
-    text-align: right;
+.control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 13px;
 }
-.fa-share-from-square{
-    color: rgb(75,200,0);
+.control > i{
+    padding-bottom: 5px ;
 }
-.foot-navbar i{
-    padding: 15px 13px;
+.control .fa-2x{
+    font-size: 1.5rem;
 }
-.close{
-    padding: 30px 20px;
-    background-color: rgb(74,74,74);
-    color: red;
+.control .fa-share-from-square{
+    color: green;
+}
+.fa-angle-up{
+    font-size: 10px;
 }
